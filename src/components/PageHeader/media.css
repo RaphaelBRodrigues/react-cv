@@ -1,0 +1,10 @@
+@media screen and (max-width:1000px){
+    #header-container{
+      background-color: yellow;
+      width: 100vw;
+    }
+    #header-container nav{
+      display: none ;
+    }
+  
+  }

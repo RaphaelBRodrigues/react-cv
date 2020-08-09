@@ -1,0 +1,20 @@
+:root {
+  --color-background: #030101;
+  --color-text-dark: #040c05;
+  --color-block-background: #0f0d2a;
+  --color-text-light: #fff;
+  --color-background3: #090816;
+  --color-background: #0c0a20;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
