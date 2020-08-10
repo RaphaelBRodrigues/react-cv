@@ -1,0 +1,7 @@
+@media (max-width:1000px){
+
+    #message-container{
+        width: 40%;
+        left: 55%;
+    }
+}

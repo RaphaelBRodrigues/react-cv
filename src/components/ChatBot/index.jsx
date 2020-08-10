@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import messageIcon from '../../assets/images/message.png';
 import './styles.css';
+import './media.css';
 
 const ToggleChat = () => {
 
-    const [isChatVisible, setIsChatVisible] = useState(true);
+    const [isChatVisible, setIsChatVisible] = useState(false);
     const [numberOfMessages, setNumberOfMessages] = useState(1);
 
 

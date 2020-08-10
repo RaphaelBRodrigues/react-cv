@@ -1,15 +1,12 @@
 @media screen and (max-width: 992px) {
   #header-container{
       background-color: yellow;
-      width: 15vw !important;
+      width: 100vw;
       justify-content: center !important;
-      position: absolute !important;
-      height: 10vh !important;
     }
     #header-container nav{
       display: none !important;
     }
-    header#header-container nav ul {
-    }
+  
     
   }

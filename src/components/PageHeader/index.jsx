@@ -1,67 +1,82 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCandyCane, faUser, faBrain, faBriefcase, faChartLine, faGraduationCap, faScroll, faSatellite, faCodeBranch, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+
+
+
 import './styles.css';
 import './media.css';
 
-import logo from '../../assets/images/logo.svg';
-import linkedinIcon from '../../assets/images/linkedin.png';
-import gitIcon from '../../assets/images/git.png';
 
 
 const PageHeader = () => {
     return (
         <header id="header-container">
+
             <div>
-                <img src="https://assets.ifttt.com/images/channels/891279159/icons/large.png" alt="Logo" />
-                <p> Raphael  {'\u00A0'} </p>
-                <p>Rodrigues</p>
+                <p>R</p>
+                <p>R</p>
+                <div>
+                    <FontAwesomeIcon icon={faCandyCane} />
+                </div>
             </div>
             <nav>
                 <ul>
                     <li>
                         <a href="">
-                            Resumo
+                            <img src="" alt="" />
+                            <FontAwesomeIcon icon={faUser} />
+                            {/* Resumo */}
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            Skills
+                            <FontAwesomeIcon icon={faChartLine} />
+
+                            {/* Skills */}
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            Projetos
+                            <FontAwesomeIcon icon={faProjectDiagram} />
+
+                            {/* Projetos */}
                         </a>
                     </li>
                     <li>
                         <a href="">
-                           Formação
+                            <FontAwesomeIcon icon={faGraduationCap} />
+
+                            {/* Formação */}
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            Carreira
+                            <FontAwesomeIcon icon={faBriefcase} />
+
+                            {/* Carreira */}
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            Contatos
+                            <FontAwesomeIcon icon={faSatellite} />
+
+                            {/* Contatos */}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <FontAwesomeIcon icon={faCodeBranch} />
+
+                            {/* git */}
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src={linkedinIcon} alt="Linkedin" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src={gitIcon} alt="Github" />
-                        </a>
-                    </li>
-                </ul>
+
             </nav>
+
+         
 
         </header>
     );

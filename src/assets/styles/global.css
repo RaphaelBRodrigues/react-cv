@@ -6,11 +6,23 @@
   --color-background3: #090816;
   --color-background: #0c0a20;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: var(--color-background);
+  overflow-x: hidden;
 }
+
+.App{
+  display: flex;
+  width: 100%;
+}
+#content{
+  width: 92%;
+  margin-left: 8vw;
+}
+
 a {
   color: inherit;
   text-decoration: none;
