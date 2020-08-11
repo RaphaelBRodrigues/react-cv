@@ -16,10 +16,11 @@ const Landing = () => {
             </div>
             <div id="photo-container">
                 <img src={foto} alt="" />
-                <button><i><FontAwesomeIcon icon={faScroll} /></i> CV</button>
-                <button><i><FontAwesomeIcon icon={faPhoneAlt} /> </i> Telefone</button>
+                <button> <p>Currículo<i><FontAwesomeIcon icon={faScroll} /></i> </p></button>
+                <button><p>Telefone<i><FontAwesomeIcon icon={faPhoneAlt} /> </i> </p></button>
                 <p>Raphael B. Rodrigues</p>
             </div>
+            
         </div>
     );
 }

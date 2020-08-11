@@ -19,14 +19,17 @@
     right: -10%;
     transform: rotate(30deg);
     text-decoration: overline;
-    font-family:"Roboto Mono";
+    font-family:var(--font-title-section);
+    outline:0.1px solid green;
+    border:0.1px solid lightgreen;
 }
 
 #photo-container{
 display: grid;
 grid-template-columns: 2fr 1fr 1fr;
 grid-template-rows: 2fr 1fr 1fr;
-gap: 2em;
+column-gap: 2em;
+row-gap: 0em;
 align-items: center;
 grid-template-areas: 
     "button foto foto"
@@ -76,24 +79,54 @@ grid-template-areas:
 
 }
 #photo-container button{
-    cursor: pointer;
-    background-color: var(--color-background);
-    border: 0;
-    color:var(--color-text-light);
-    height: 4.5em;
-    border-radius: 9px;
-    text-align: center;
+    display: flex;
     align-items: center;
-    font-size: 0.9em;
+    justify-content: center;
+    border:0;
+    font-style: italic;
+    background-color: var(--color-block-background);
+    color: var(--color-text-light);
+    font-family: var(--font-text-button);
+    font-size: 1.05em;
+    height: 2.5em;
+    border-bottom: 1px solid var(--color-spotted);
+    border-right: 1px solid var(--color-spotted);
+    border-top: 1px solid var(--color-background);
+    border-left: 1px solid var(--color-background);
+    box-shadow: 3px 3px 7px var(--color-spotted);
+
+    border-bottom-left-radius:0.7em;
+    border-top-right-radius:0.7em;
+    transition-duration: 0.7s;
+}
+
+#photo-container button:hover{
+
+    box-shadow: -1px -1px 3px var(--color-spotted);
+
+
+    border-bottom-right-radius:0.7em;
+    border-top-left-radius:0.7em;
+    border-bottom-left-radius:0em;
+    border-top-right-radius:0em;
+
+    border-top: 1px solid var(--color-spotted);
+    border-left: 1px solid var(--color-spotted);
+
+    border-bottom: 1px solid var(--color-background);
+    border-right: 1px solid var(--color-background);
 }
 #photo-container button i{
-    margin-right: 0.5em;
+    font-size: 0.8em;
+    display: none;
 }
-#photo-container p{
+
+
+#photo-container > p{
     color:var(--color-text-light);
 text-align: center;
-font-family:"Roboto Mono";
+font-family:var(--font-title-section);
 font-size: 1.6em;
-text-decoration: line-through;
+/* text-decoration: line-through; */
 grid-area: nome;
 }

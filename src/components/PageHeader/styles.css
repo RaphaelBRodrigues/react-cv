@@ -28,11 +28,46 @@ header#header-container > div {
   justify-content: center;
   transition-duration: 0.5s;
   box-sizing: border-box;
+  border:1px solid var(--color-background);
+  border-left: 0;
+  border-top: 0;
 }
 header#header-container > div:hover {
   background-color: var(--color-background);
   padding-top: 1em;
+  border:1px solid var(--color-background);
+  border-left: 0;
+  border-top: 0;
+  animation:loucuraCaixaDoLogo 2s linear;
 }
+@keyframes loucuraCaixaDoLogo{
+  0%{
+    border-color: var(--color-spotted);
+    color:var(--color-background);
+    background-color: var(--color-spotted);
+  }
+  25%{
+    border-color: var(--color-background);
+    color:var(--color-spotted);
+    background-color: var(--color-background);
+
+  }
+  75%{
+    border-color: var(--color-background);
+    color:var(--color-spotted);
+    background-color: var(--color-background);
+
+  }
+  100%{
+    border-color: var(--color-background);
+    color:var(--color-text-light);
+    background-color: var(--color-background);
+
+  }
+}
+
+
+
 header#header-container > div:hover p:first-of-type {
   transform: rotate(180deg);
   text-decoration: none;
@@ -98,9 +133,16 @@ header#header-container nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
   box-sizing: border-box;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
+  border-right:1px solid var(--color-block-background);
+  border-left:0;
+
 }
+
+
 
 .select,
 header#header-container nav ul li:hover {
@@ -110,9 +152,27 @@ header#header-container nav ul li:hover {
   letter-spacing: 0.05em;
   font-size: 1.2em;
   box-shadow: 1px 1px 10px var(--color-background);
+  border-right:1px solid var(--color-spotted);
+  border-left:0;
+
 }
+
+header#header-container nav ul li:hover span{
+  opacity: 1;
+  color:var(--color-spotted);
+
+}
+
+
+
+
 header#header-container nav ul li a {
   transition-duration: 0.4s;
+}
+header#header-container nav ul li a span{
+  font-size: 0.6em;
+  opacity: 0;
+  transition:0.5s opacity,0.7s font-size ,2s color ;
 }
 header#header-container nav ul li:hover a {
   transform: rotate(360deg);

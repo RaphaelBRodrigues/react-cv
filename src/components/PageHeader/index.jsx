@@ -25,58 +25,65 @@ const PageHeader = () => {
                 <ul>
                     <li>
                         <a href="">
-                            <img src="" alt="" />
                             <FontAwesomeIcon icon={faUser} />
-                            {/* Resumo */}
+                            <br/><span>
+                                Resumo
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <FontAwesomeIcon icon={faChartLine} />
-
-                            {/* Skills */}
+                            <br/><span>
+                                Skills
+                           </span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <FontAwesomeIcon icon={faProjectDiagram} />
-
-                            {/* Projetos */}
+                            <br/><span>
+                                Projetos
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <FontAwesomeIcon icon={faGraduationCap} />
-
-                            {/* Formação */}
+                            <br/><span>
+                                Formação
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <FontAwesomeIcon icon={faBriefcase} />
-
-                            {/* Carreira */}
+                            <br/><span>
+                                Carreira
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <FontAwesomeIcon icon={faSatellite} />
-
-                            {/* Contatos */}
+                            <br/><span>
+                                Contatos
+                            </span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <FontAwesomeIcon icon={faCodeBranch} />
-
-                            {/* git */}
+                            <br/><span>
+                                Commits
+                            </span>
                         </a>
                     </li>
                 </ul>
 
             </nav>
 
-         
+
 
         </header>
     );
