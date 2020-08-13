@@ -27,4 +27,3 @@ const Landing = () => {
 
 export default Landing;
 
-//tomada ligando os blocos

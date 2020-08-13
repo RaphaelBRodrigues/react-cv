@@ -24,6 +24,7 @@ header#header-container {
 }
 
 header#header-container > div {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   transition-duration: 0.5s;
@@ -85,11 +86,13 @@ header#header-container > div > div {
   right: 1%;
   transition: 2s top, 3s transform, 2s right;
   top: -6%;
+  opacity:0;
 }
 
 header#header-container > div:hover div {
   transform: rotate(150deg);
   right: 1%;
+  opacity:1;
   top: -1.5%;
 }
 header#header-container > div p {
