@@ -37,7 +37,9 @@
      flex-grow: 1 !important;
   }
   .hideMenu{
+    opacity: 0;
     margin-left:-130% !important;
+
   }
   .showMenu{
     margin-left:-0% !important;

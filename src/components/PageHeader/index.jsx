@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCandyCane, faUser, faBrain, faBriefcase, faChartLine, faGraduationCap, faScroll, faSatellite, faCodeBranch, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
-import { handleMenuVisibility } from './handlers';
+import { hideMenu } from './handlers';
 import { useState, useEffect } from 'react';
 
 
@@ -13,41 +13,26 @@ import './media.css';
 
 const PageHeader = () => {
 
-    const [isVisible, setIsVisible] = useState([]);
+    const [isVisible, setIsVisible] = useState(false);
 
 
     useEffect(() => {
-        console.clear();
-        const nav = document.getElementById("header-list");
-     
-        if(isVisible){
-            nav.classList.add("showMenu");
-            nav.classList.remove("hideMenu");
-        }else{
-            nav.classList.remove("showMenu");
-            nav.classList.add("hideMenu");
-        }
-        console.info(nav);
-
-
+        const nav = document.getElementById("header-list");     
+        hideMenu(nav,isVisible);
     }, [isVisible]);
 
 
     return (
         <header id="header-container">
 
-            <div
-                onClick={() => {
-                    handleMenuVisibility(isVisible, setIsVisible);
-                }}
-            >
+            <div onClick={() => setIsVisible(!isVisible)}>
                 <p>R</p>
                 <p>R</p>
                 <div>
                     <FontAwesomeIcon icon={faCandyCane} />
                 </div>
             </div>
-            <nav class="hideMenu" id="header-list">
+            <nav id="header-list">
                 <ul>
                     <li>
                         <a href="">

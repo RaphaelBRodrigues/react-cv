@@ -1,22 +1,15 @@
 
-// let isVisible = false;
 
-function handleMenuVisibility(isVisible,setIsVisible){
-    setIsVisible(!isVisible);    
-    
-    if(true){
-        return {
-            add:'showMenu',
-            remove:'dsa',
-        }
+function hideMenu(nav,isVisible){
+    if(isVisible){
+        nav.classList.add("showMenu");
+        nav.classList.remove("hideMenu");
     }else{
-        return {
-            add:'showMenu',
-            remove:'dsa'
-        }
+        nav.classList.remove("showMenu");
+        nav.classList.add("hideMenu");
     }
 }
 
 
 
-export { handleMenuVisibility };
+export { hideMenu };
