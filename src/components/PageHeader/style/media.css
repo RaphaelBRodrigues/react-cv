@@ -1,4 +1,4 @@
-#landing-container {
+#landing-container{
   display: none !important;
 }
 
@@ -25,6 +25,12 @@
     position: absolute !important;
     flex-flow: 1;
   }
+
+  header#header-container nav ul li:hover {
+    width: 100%;
+  }
+
+
 
   #header-container nav ul li span {
     opacity: 1 !important;

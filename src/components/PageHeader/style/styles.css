@@ -137,7 +137,7 @@ header#header-container nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+  overflow: hidden;
   box-sizing: border-box;
   transition-duration: 0.4s;
   border-right:1px solid var(--color-block-background);

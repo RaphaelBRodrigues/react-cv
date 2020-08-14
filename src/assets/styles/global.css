@@ -11,7 +11,9 @@
   --font-title-section:"Roboto Mono";
   --font-text-general:'Mulish', sans-serif;
 }
-
+*{
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +26,7 @@ body {
 .App{
   display: flex;
   width: 100%;
+
 }
 #content{
   width: 92%;

@@ -6,8 +6,8 @@ import { hideMenu } from './handlers';
 import { useState, useEffect } from 'react';
 
 
-import './styles.css';
-import './media.css';
+ import './style/styles.css';
+ import './style/media.css';
 
 
 
