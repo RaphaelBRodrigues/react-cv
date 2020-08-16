@@ -1,0 +1,26 @@
+#titleSection-container {
+  display: flex;
+  justify-content: center;
+}
+#titleSection-container h1 {
+  font-size: 3em;
+  letter-spacing: 0.3em;
+  font-weight: 900;
+  font-family: var(--font-title-section);
+  text-align: center;
+  line-height: 1.4em;
+}
+
+#titleSection-container h1 div {
+  background-color: white;
+  height: 0.05em;
+  width: 0;
+  transition-duration: 0.4s;
+}
+
+#titleSection-container h1 div:hover div,
+#titleSection-container h1:hover div {
+  width: 100%;
+  background-color: var(--color-spotted);
+  border-radius: 5em;
+}

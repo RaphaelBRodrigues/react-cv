@@ -1,0 +1,30 @@
+#contentBlock-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contentBlock-container fieldset{
+  border-radius: 8px;
+  width: 60%;
+  text-align: center;
+  box-shadow: 2px 2px 24px var(--color-spotted);
+}
+
+#contentBlock-container fieldset legend{
+  text-align: left;
+  font-size:2em ;
+}
+#contentBlock-container fieldset p::first-letter {
+  font-weight: bold;
+  font-size: 1.8em;
+  
+  letter-spacing: 0.2em;
+}
+
+#contentBlock-container fieldset p {
+  font-family: var(--font-text-block);
+  line-height: 1.6em;
+  letter-spacing: 0.12em;
+  padding: 0em 0.2em 0.2em 0.2em;
+}

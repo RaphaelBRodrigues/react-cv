@@ -181,3 +181,11 @@ header#header-container nav ul li:hover a {
   transform: rotate(360deg);
 }
 
+#scrollUp{
+  position: fixed;
+  right: 3%;
+  top:90%;
+  height: 5em;
+  font-size: 2em;
+  
+}

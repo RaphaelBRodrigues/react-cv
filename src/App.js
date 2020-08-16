@@ -2,9 +2,10 @@ import React from 'react';
 
 import './assets/styles/global.css';
 
-import Footer from './components/Footer';
-import PageHeader from './components/PageHeader';
-import Landing from './components/Landing';
+import Footer from './blocks/Footer';
+import PageHeader from './blocks/PageHeader';
+import Landing from './blocks/Landing';
+import Resume from './blocks/Resume';
 // import ToggleChat from './components/ChatBot';
 // import Terminal from './components/Terminal';
 
@@ -17,6 +18,8 @@ function App() {
       <Landing />
       {/* <Terminal /> */}
       {/* <ToggleChat /> */}
+      <Resume />
+      <Footer />
       </main>
 
     </div>

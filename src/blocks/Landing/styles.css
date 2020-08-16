@@ -1,7 +1,7 @@
 #landing-container{
     background-color: var(--color-background3);
     display: flex;
-    height: 43.5em;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -47,21 +47,6 @@ grid-template-areas:
     border: 1px solid black;
 }
 
-#photo-container img:hover{
-    animation:vaiVoltaFoto 1s linear;
-}
-
-@keyframes vaiVoltaFoto{
-    0%{
-        transform: rotate(00deg);
-    }
-    50%{
-    }
-    100%{
-        
-        transform: rotate(0deg);
-    }
-}
 
 
 

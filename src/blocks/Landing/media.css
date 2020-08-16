@@ -4,4 +4,7 @@
         width: 40%;
         left: 55%;
     }
+    #landing-fita{
+        display: none;
+    }
 }
