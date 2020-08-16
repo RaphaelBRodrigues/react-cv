@@ -1,0 +1,32 @@
+#section-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+#section-container:hover #titleSection-container div div,
+#section-container:hover #titleSection-container div {
+  width: 25%;
+  background-color: var(--color-spotted);
+  border-radius: 5em;
+  border-radius: black !important;
+}
+
+#section-container:hover #contentBlock-container fieldset legend{
+  transform: rotate(360deg);
+  border-color: var(--color-spotted);
+  color:var(--color-spotted);
+}
+
+#section-container:hover #contentBlock-container fieldset{
+  border-color: var(--color-spotted);
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 1.5em;
+}
+#section-container:hover #contentBlock-container fieldset p{
+  line-height: 2em;
+}

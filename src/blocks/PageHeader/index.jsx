@@ -14,11 +14,12 @@ import './style/media.css';
 const PageHeader = () => {
 
     const [isVisible, setIsVisible] = useState(false);
-    let resume = 0, landing = 0;
+    let resume = 0, landing = 0,skills = 0;
 
     useEffect(() => {
         resume = document.getElementById("resume-container");
         landing = document.getElementById("landing-container");
+        skills = document.getElementById("skills-container");
     }, []);
 
 
@@ -53,8 +54,12 @@ const PageHeader = () => {
                             </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="">
+                        <li
+                         onClick={() => {
+                            handleGoToSection(skills);
+                        }}
+                        >
+                            <a>
                                 <FontAwesomeIcon icon={faChartLine} />
                                 <br /><span>
                                     Skills
@@ -62,7 +67,7 @@ const PageHeader = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <FontAwesomeIcon icon={faProjectDiagram} />
                                 <br /><span>
                                     Projetos
@@ -70,7 +75,7 @@ const PageHeader = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <FontAwesomeIcon icon={faGraduationCap} />
                                 <br /><span>
                                     Formação
@@ -78,7 +83,7 @@ const PageHeader = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <FontAwesomeIcon icon={faBriefcase} />
                                 <br /><span>
                                     Carreira
@@ -86,7 +91,7 @@ const PageHeader = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <FontAwesomeIcon icon={faSatellite} />
                                 <br /><span>
                                     Contatos
@@ -94,7 +99,7 @@ const PageHeader = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <FontAwesomeIcon icon={faCodeBranch} />
                                 <br /><span>
                                     Commits

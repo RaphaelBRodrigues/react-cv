@@ -1,0 +1,33 @@
+#skills-container fieldset{
+    width: 70%;
+    padding: 1.5em 1em;
+}
+
+#skill-container{
+    margin-bottom: 1em;
+}
+#skill-container > div{
+    display: flex;
+    justify-content: space-between;
+}
+#skill-container div p::first-letter{
+    font-weight: normal;
+    font-size: inherit;
+}
+
+#skill-container div + div{
+    outline:1px solid rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
+    height: 0.8em;
+    width: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+#skill-container div + div div{
+    height: 100%;
+    background-color: green;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: -50px;
+    
+}
+

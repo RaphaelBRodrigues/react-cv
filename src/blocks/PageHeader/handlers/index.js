@@ -17,22 +17,22 @@ function handleHideMenu(nav, isVisible) {
 }
 
 function handleGoToSection(section) {
-    const scrollHeight = section.scrollHeight;
+    const top = section.offsetTop;
     const isLanding = section.id == "landing-container";
+
+
     console.clear();
     console.table(section);
+ 
     
-
     if (!isLanding) {
         window.scroll({
-            top: scrollHeight,
-            left: 0,
+            top,
             behavior: "smooth"
         });
     } else {
         window.scroll({
             top: 0,
-            left: 0,
             behavior: "smooth"
         });
     }

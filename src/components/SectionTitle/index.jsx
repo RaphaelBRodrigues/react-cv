@@ -7,7 +7,7 @@ import './style/media.css';
 
 
 
-const TitleSection = ({ title }) => {
+const SectionTitle = ({ title }) => {
     return (
         <div id="titleSection-container">
             <div></div>
@@ -19,4 +19,4 @@ const TitleSection = ({ title }) => {
     );
 }
 
-export default TitleSection;
+export default SectionTitle;

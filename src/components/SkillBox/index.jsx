@@ -1,14 +1,25 @@
 import React from 'react';
-import './styles.css';
+import './styles/styles.css';
 
 
-const Footer = () => {
+const SkillBox = ({ title, nivel, icon }) => {
+    // nivel = 0;
     return (
-        <footer>
-            s
-        </footer>
+        <div id="skill-container">
+            <div>
+                <p>{title}</p>
+                <p>{nivel}%</p>
+            </div>
+            <div>
+                <div style={
+                    {
+                        width:`${nivel}%`
+                    }
+                }></div>
+            </div>
+        </div>
     );
 }
 
 
-export default Footer;
+export default SkillBox;
