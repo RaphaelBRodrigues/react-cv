@@ -1,6 +1,9 @@
 #titleSection-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
 }
 #titleSection-container h1 {
   font-size: 3em;
@@ -8,20 +11,30 @@
   font-weight: 900;
   font-family: var(--font-title-section);
   text-align: center;
-  line-height: 1.4em;
+  line-height: 0.5em;
   transition-duration: 1s;
+  padding: 0 0 0 0.2em;
 }
 
-#titleSection-container h1 div {
+#titleSection-container div {
   background-color: white;
   height: 0.05em;
   width: 0;
   transition-duration: 0.4s;
 }
 
-#titleSection-container h1 div:hover div,
-#titleSection-container h1:hover div {
-  width: 100%;
+#titleSection-container div:hover div,
+#titleSection-container:hover div {
   background-color: var(--color-spotted);
-  border-radius: 5em;
+}
+
+
+
+
+#titleSection-container h1:hover{
+  font-size: 3.2em !important;
+}
+
+#titleSection-container div:first-of-type{
+
 }

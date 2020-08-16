@@ -7,3 +7,27 @@
   background-image: linear-gradient(to top, var(--color-background3),var(--color-background)); */
 
 }
+
+#resume-container:hover #titleSection-container div div,
+#resume-container:hover #titleSection-container div {
+  width: 25%;
+  background-color: var(--color-spotted);
+  border-radius: 5em;
+  border-radius: black !important;
+}
+
+#resume-container:hover #contentBlock-container fieldset legend{
+  transform: rotate(360deg);
+  border-color: var(--color-spotted);
+  color:var(--color-spotted);
+}
+
+#resume-container:hover #contentBlock-container fieldset{
+  border-color: var(--color-spotted);
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 1.5em;
+}
+#resume-container:hover #contentBlock-container fieldset p{
+  line-height: 2em;
+}

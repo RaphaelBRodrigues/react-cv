@@ -33,6 +33,8 @@
   transform: rotate(360deg);
   border-color: var(--color-spotted);
   color:var(--color-spotted);
+  background-color: black;
+
 }
 
 
@@ -44,6 +46,7 @@
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   padding: 1.5em;
+  background-color: black;
 }
 #contentBlock-container fieldset p::first-letter {
   font-weight: bold;
@@ -63,5 +66,5 @@
 }
 
 #contentBlock-container fieldset:hover p {
-  line-height: 2.3em;
+  line-height: 2.5em !important;
 }

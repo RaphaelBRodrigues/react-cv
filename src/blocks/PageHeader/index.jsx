@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCandyCane, faUser, faBrain, faArrowAltCircleUp, faBriefcase, faChartLine, faGraduationCap, faScroll, faSatellite, faCodeBranch, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
-import { hideMenu } from './handlers';
+import { handleHideMenu, handleGoToSection } from './handlers';
 import { useState, useEffect } from 'react';
 
 
@@ -14,11 +14,17 @@ import './style/media.css';
 const PageHeader = () => {
 
     const [isVisible, setIsVisible] = useState(false);
+    let resume = 0, landing = 0;
+
+    useEffect(() => {
+        resume = document.getElementById("resume-container");
+        landing = document.getElementById("landing-container");
+    }, []);
 
 
     useEffect(() => {
         const nav = document.getElementById("header-list");
-        hideMenu(nav, isVisible);
+        handleHideMenu(nav, isVisible);
     }, [isVisible]);
 
 
@@ -35,8 +41,12 @@ const PageHeader = () => {
                 </div>
                 <nav id="header-list">
                     <ul>
-                        <li>
-                            <a href="#resume-container">
+                        <li
+                            onClick={() => {
+                                handleGoToSection(resume);
+                            }}
+                        >
+                            <a>
                                 <FontAwesomeIcon icon={faUser} />
                                 <br /><span>
                                     Resumo
@@ -97,12 +107,13 @@ const PageHeader = () => {
                 </nav>
 
             </header>
-            <div id="scrollUp">
-            <a href="#">
+            <div id="scrollUp"
+                onClick={() => {
+                    handleGoToSection(landing);
+                }}>
                 <FontAwesomeIcon icon={faArrowAltCircleUp} />
-            </a>
             </div>
-                        </>
+        </>
     );
 }
 

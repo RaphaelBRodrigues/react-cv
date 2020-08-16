@@ -19,8 +19,8 @@ function App() {
       {/* <Terminal /> */}
       {/* <ToggleChat /> */}
       <Resume />
-      <Footer />
       </main>
+      <Footer />
 
     </div>
   );
