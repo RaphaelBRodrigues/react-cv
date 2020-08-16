@@ -9,6 +9,7 @@
   font-family: var(--font-title-section);
   text-align: center;
   line-height: 1.4em;
+  transition-duration: 1s;
 }
 
 #titleSection-container h1 div {
