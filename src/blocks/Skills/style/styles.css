@@ -1,6 +1,12 @@
 #skills-block-container{
-  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-#skills-container fieldset{
-  
+#skills-block-container div{
+  display: flex;
+  width: 100%;
+  margin-bottom: 2em;
+}
+#skills-block-container div fieldset{
+  width: 75%;
 }

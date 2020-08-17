@@ -10,6 +10,7 @@ const SkillBox = ({ title, nivel, icon }) => {
                 <p>{title}</p>
                 <p>{nivel}%</p>
             </div>
+
             <div>
                 <div style={
                     {

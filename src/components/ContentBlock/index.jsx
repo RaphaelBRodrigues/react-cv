@@ -15,9 +15,10 @@ const ContentBlock = ({ icon, text , children }) => {
         <div id="contentBlock-container">
             <fieldset>
                 <legend>
-                    <i>
+                <i>
                         <FontAwesomeIcon icon={icon} />
                     </i>
+
                 </legend>
                 <p>
                     {text}

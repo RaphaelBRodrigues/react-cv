@@ -12,18 +12,24 @@ import './style/media.css';
 
 const SectionContainer = ({ children, dark, double }) => {
 
+    const style = {
+        backgroundColor:0,
+        height:"100vh"
+    };
+
+    if(dark){
+        style.backgroundColor = "var(--color-background3)";
+    }
+    if(double){
+        style.height = "200vh";
+    }
+
         
     
 return (
     <div
         id="section-container"
-        style={
-            dark
-                ? { backgroundColor: "var(--color-background3)" }
-                : null
-
-
-        }
+        style={style}
 
 
     >

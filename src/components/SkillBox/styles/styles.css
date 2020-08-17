@@ -1,15 +1,19 @@
-#skills-container fieldset{
-    width: 70%;
-    padding: 1.5em 1em;
-}
+
 
 #skill-container{
-    margin-bottom: 1em;
+    margin-bottom: 3em !important;
+    display: block !important;
 }
+
+
 #skill-container > div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 0em;
+    width: 100%;
 }
+
 #skill-container div p::first-letter{
     font-weight: normal;
     font-size: inherit;
@@ -20,6 +24,7 @@
     background-color: rgba(255,255,255,0.9);
     height: 0.8em;
     width: 100%;
+    display: block !important;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
