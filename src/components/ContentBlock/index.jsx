@@ -10,21 +10,22 @@ import './style/media.css';
 
 
 
-const ContentBlock = ({ icon, text , children }) => {
+const ContentBlock = ({ icon, text, children ,title}) => {
     return (
         <div id="contentBlock-container">
             <fieldset>
                 <legend>
-                <i>
+                    <i>
                         <FontAwesomeIcon icon={icon} />
                     </i>
-
                 </legend>
+                <div className="legend2">{title}</div>
+
                 <p>
                     {text}
                 </p>
-                    {children}
-                
+                {children}
+
             </fieldset>
         </div>
     );

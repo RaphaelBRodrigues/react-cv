@@ -14,6 +14,8 @@
   box-shadow:2px 2px 20px var(--color-background);
   border: 1px solid white;
   transition-duration: 1s;
+  position: relative;
+
 }
 
 #contentBlock-container fieldset legend{
@@ -35,6 +37,17 @@
   color:var(--color-spotted);
   background-color: black;
 
+}
+
+
+.legend2 {
+  background-color: var(--color-background3);
+  position: absolute;
+  left: 75%;
+  top: 5% !important;
+  justify-content: center;
+  width: 45% !important;
+  transform: rotate(40deg);
 }
 
 

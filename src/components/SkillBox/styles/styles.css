@@ -36,3 +36,10 @@
     
 }
 
+#skill-container.soon{
+    color:gray;
+}
+#skill-container.soon div{
+    outline-color: gray ;
+    background-color: gray;
+}
