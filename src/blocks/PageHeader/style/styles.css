@@ -147,7 +147,7 @@ header#header-container nav ul li {
 
 
 
-.select,
+.navItemSelected ,
 header#header-container nav ul li:hover {
   background-color: var(--color-background);
   width: 110%;
@@ -159,13 +159,11 @@ header#header-container nav ul li:hover {
   border-left:0;
 
 }
-
 header#header-container nav ul li:hover span{
   opacity: 1;
   color:var(--color-spotted);
 
 }
-
 
 
 
@@ -188,4 +186,23 @@ header#header-container nav ul li:hover a {
   height: 5em;
   font-size: 2em;
   
+}
+
+
+.navItemSelected span{
+  opacity: 1 !important;
+  color:var(--color-spotted) !important;
+}
+
+
+.navItemSelected{
+  all: unset;
+  background-color: var(--color-background) !important;
+  width: 110% !important;
+  padding-bottom: 0.4em !important;
+  letter-spacing: 0.05em !important;
+  font-size: 1.2em !important;
+  box-shadow: 1px 1px 10px var(--color-background) !important;
+  border-right:1px solid var(--color-spotted) !important;
+  border-left:0;
 }

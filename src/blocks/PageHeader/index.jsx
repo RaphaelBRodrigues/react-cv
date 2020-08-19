@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCandyCane, faUser, faBrain, faArrowAltCircleUp, faBriefcase, faChartLine, faGraduationCap, faScroll, faSatellite, faCodeBranch, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
-import { handleHideMenu, handleGoToSection } from './handlers';
+import { faCandyCane, faUser, faBrain, faArrowAltCircleUp, faBriefcase, faChartLine, faGraduationCap, faScroll, faSatellite, faCodeBranch, faProjectDiagram, faWindowMaximize } from '@fortawesome/free-solid-svg-icons';
+import { handleHideMenu, handleGoToSection , handleSpotMenuItem } from './handlers';
 import { useState, useEffect } from 'react';
 
 
@@ -14,13 +14,22 @@ import './style/media.css';
 const PageHeader = () => {
 
     const [isVisible, setIsVisible] = useState(false);
-    let resume = 0, landing = 0,skills = 0;
+    let resume = 0, landing = 0, skills = 0,scrollPosition = 0;
 
     useEffect(() => {
-        resume = document.getElementById("resume-container");
         landing = document.getElementById("landing-container");
+        resume = document.getElementById("resume-container");
         skills = document.getElementById("skills-container");
+
     }, []);
+    
+     window.addEventListener("scroll",()=>{
+        handleSpotMenuItem([
+            {height:resume.offsetTop,navItem:"resume"},
+            {height:skills.offsetTop,navItem:"skills"}
+        ]);
+
+     });
 
 
     useEffect(() => {
@@ -46,6 +55,7 @@ const PageHeader = () => {
                             onClick={() => {
                                 handleGoToSection(resume);
                             }}
+                            id="navItem-resume"
                         >
                             <a>
                                 <FontAwesomeIcon icon={faUser} />
@@ -55,9 +65,10 @@ const PageHeader = () => {
                             </a>
                         </li>
                         <li
-                         onClick={() => {
-                            handleGoToSection(skills);
-                        }}
+                            id="navItem-skills"
+                            onClick={(event) => {
+                                handleGoToSection(skills);
+                            }}
                         >
                             <a>
                                 <FontAwesomeIcon icon={faChartLine} />

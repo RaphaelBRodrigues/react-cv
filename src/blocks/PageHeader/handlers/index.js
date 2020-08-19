@@ -21,9 +21,7 @@ function handleGoToSection(section) {
     const isLanding = section.id == "landing-container";
 
 
-    console.clear();
-    console.table(section);
- 
+  
     
     if (!isLanding) {
         window.scroll({
@@ -38,9 +36,20 @@ function handleGoToSection(section) {
     }
 }
 
-function spotMenuItem() {
+function handleSpotMenuItem(sections) {
+    const scrollPosition = window.scrollY;
+
+
+    sections.map((section)=>{
+        if(scrollPosition > (section.height * 0.75) && scrollPosition < (section.height * 1.75)){
+            console.table(section.navItem);
+            document.getElementById("navItem-"+section.navItem).classList.add("navItemSelected");
+        }else{
+            document.getElementById("navItem-"+section.navItem).classList.remove("navItemSelected");
+        }
+    });
 
 }
 
 
-export { handleHideMenu, handleGoToSection };
+export { handleHideMenu, handleGoToSection , handleSpotMenuItem };

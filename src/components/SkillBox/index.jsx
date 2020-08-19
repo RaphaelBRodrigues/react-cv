@@ -1,25 +1,16 @@
 import React from 'react';
 import './styles/styles.css';
 import { useState, useEffect } from 'react';
-
+import { handleSkillNivel } from './handlers/';
 
 const SkillBox = ({ title, nivel, icon, soon, textNivel }) => {
 
     nivel = soon ? 0 : nivel;
     const [skillNivel, setSkillNivel] = useState(0);
 
+    
     useEffect(() => {
-        let i = 0;
-        setInterval(() => {
-            if (i <= nivel) {
-
-                setTimeout(()=>{
-                    setSkillNivel(i);
-                    i++;
-                });
-                
-            }
-        }, 40);
+        handleSkillNivel(nivel,setSkillNivel);
     }, []);
 
 
