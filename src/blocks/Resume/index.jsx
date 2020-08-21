@@ -12,7 +12,7 @@ import './style/media.css';
 
 
 
-const Resume = () => {
+function Resume(){
     return (
         <div id="resume-container">
 
@@ -31,6 +31,8 @@ const Resume = () => {
 
                 "
                 />
+                    {/* <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="pt_BR" data-type="horizontal" data-theme="dark" data-vanity="raphael-b-rodrigues-08b02889"><a class="LI-simple-link" href='https://br.linkedin.com/in/raphael-b-rodrigues-08b02889?trk=profile-badge'>Raphael B. Rodrigues</a></div> */}
+
             </SectionContainer>
         </div>
     );

@@ -12,4 +12,11 @@ function handleSkillNivel(nivel,setSkillNivel){
     }, 40);}
 
 
+
+
+
+
+    
+
+
 export { handleSkillNivel };

@@ -3,15 +3,35 @@ import './styles/styles.css';
 import { useState, useEffect } from 'react';
 import { handleSkillNivel } from './handlers/';
 
-const SkillBox = ({ title, nivel, icon, soon, textNivel }) => {
+
+function SkillBox({ title, nivel, icon, soon, textNivel }) {
 
     nivel = soon ? 0 : nivel;
     const [skillNivel, setSkillNivel] = useState(0);
+    const [increaseNivel, setIncreaseNivel] = useState(0);
+    let skillContainer = {};
 
-    
     useEffect(() => {
-        handleSkillNivel(nivel,setSkillNivel);
-    }, []);
+        skillContainer = document.getElementById("skill-container");
+        if (increaseNivel == 1) {
+            handleSkillNivel(nivel, setSkillNivel);
+        }
+
+
+    }, [increaseNivel]);
+
+
+
+
+
+    if (increaseNivel === 0) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > skillContainer.offsetTop * 1.20) {
+                setIncreaseNivel(1);
+            }
+        });
+    }
+
 
 
     return (
@@ -45,4 +65,5 @@ const SkillBox = ({ title, nivel, icon, soon, textNivel }) => {
 }
 
 
+export { };
 export default SkillBox;

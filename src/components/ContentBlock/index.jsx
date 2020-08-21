@@ -10,10 +10,16 @@ import './style/media.css';
 
 
 
-const ContentBlock = ({ icon, text, children ,title}) => {
+function ContentBlock({ icon, text, children ,title,light}){
     return (
-        <div id="contentBlock-container">
-            <fieldset>
+        <div 
+        id="contentBlock-container" 
+        >
+            <fieldset
+            className={
+                light ? "lightContentBlock" :null
+            }
+            >
                 <legend>
                     <i>
                         <FontAwesomeIcon icon={icon} />
@@ -22,7 +28,7 @@ const ContentBlock = ({ icon, text, children ,title}) => {
                 <div className="legend2">{title}</div>
 
                 <p>
-                    {text}
+                    {text ? text : null}
                 </p>
                 {children}
 

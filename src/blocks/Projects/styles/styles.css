@@ -1,0 +1,21 @@
+#projects-container #contentBlock-container fieldset{
+    /* padding: 0 !important;
+    margin: 0 !important; */
+    width: 80%;
+}
+
+#projects-container  div{
+    display: flex;
+}
+
+#projects-container #contentBlock-container{
+    font-family:var(--font-text-block);
+}
+#projects-container #contentBlock-container h3 , h4{
+    font-family: var(--font-text-general);
+}
+
+#projects-container #contentBlock-container img{
+    width: 70%;
+    padding-bottom: 3.5em;
+}

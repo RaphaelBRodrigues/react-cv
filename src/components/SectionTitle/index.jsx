@@ -7,7 +7,7 @@ import './style/media.css';
 
 
 
-const SectionTitle = ({ title }) => {
+function SectionTitle({ title }){
     return (
         <div id="titleSection-container">
             <div></div>

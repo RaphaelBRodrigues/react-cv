@@ -3,7 +3,7 @@ import messageIcon from '../../assets/images/message.png';
 import './styles.css';
 import './media.css';
 
-const ToggleChat = () => {
+function ToggleChat(){
 
     const [isChatVisible, setIsChatVisible] = useState(false);
     const [numberOfMessages, setNumberOfMessages] = useState(1);

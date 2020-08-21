@@ -10,7 +10,7 @@ import './style/media.css';
 
 
 
-const SectionContainer = ({ children, dark, double }) => {
+function SectionContainer({ children, dark, double }){
 
     const style = {
         backgroundColor:0,

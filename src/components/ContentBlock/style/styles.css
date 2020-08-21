@@ -6,17 +6,17 @@
 }
 
 #contentBlock-container fieldset{
-  border: 0;
+  border: 0 !important;
   border-radius: 15px;
   width: 60%;
   text-align: center;
   background-color: var(--color-background3);
   box-shadow:2px 2px 20px var(--color-background);
-  border: 1px solid white;
   transition-duration: 1s;
   position: relative;
-
 }
+
+
 
 #contentBlock-container fieldset legend{
   text-align: left;
@@ -30,13 +30,7 @@
   border-radius: 50%;
   height: 2em;
   transition-duration: 1s;
-}
-#contentBlock-container fieldset:hover legend{
-  transform: rotate(360deg);
-  border-color: var(--color-spotted);
-  color:var(--color-spotted);
-  background-color: black;
-
+  background-color:  var(--color-background3);
 }
 
 
@@ -54,13 +48,7 @@
 
 
 
-#contentBlock-container fieldset:hover{
-  border-color: var(--color-spotted);
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  padding: 1.5em;
-  background-color: black;
-}
+
 #contentBlock-container fieldset p::first-letter {
   font-weight: bold;
   font-size: 1.8em;
@@ -80,4 +68,25 @@
 
 #contentBlock-container fieldset:hover p {
   line-height: 2.5em !important;
+}
+
+
+#contentBlock-container fieldset:hover{
+  border-color: var(--color-spotted);
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 1.5em;
+  background-color: black !important;
+}
+
+#contentBlock-container fieldset:hover legend{
+  transform: rotate(360deg);
+  border-color: var(--color-spotted);
+  color:var(--color-spotted);
+  background-color: black !important;
+
+}
+.lightContentBlock , 
+.lightContentBlock legend{
+  background-color: var(--color-background) !important;
 }

@@ -41,13 +41,19 @@ function handleSpotMenuItem(sections) {
 
 
     sections.map((section)=>{
-        if(scrollPosition > (section.height * 0.75) && scrollPosition < (section.height * 1.75)){
-            console.table(section.navItem);
+        if(scrollPosition > (section.height * 0.7) && scrollPosition < (section.height * 1.50)){
             document.getElementById("navItem-"+section.navItem).classList.add("navItemSelected");
+            if(section.navItem == "skills"){
+
+            }
         }else{
-            document.getElementById("navItem-"+section.navItem).classList.remove("navItemSelected");
+            // setTimeout(()=>{
+                document.getElementById("navItem-"+section.navItem).classList.remove("navItemSelected");
+            // },3000);
+        
         }
     });
+
 
 }
 

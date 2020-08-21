@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 
-const Terminal = () => {
+function Terminal(){
     return (
         <div id="terminal-container">
 

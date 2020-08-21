@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCandyCane, faUser, faBrain, faArrowAltCircleUp, faBriefcase, faChartLine, faGraduationCap, faScroll, faSatellite, faCodeBranch, faProjectDiagram, faWindowMaximize } from '@fortawesome/free-solid-svg-icons';
-import { handleHideMenu, handleGoToSection , handleSpotMenuItem } from './handlers';
+import { handleHideMenu, handleGoToSection, handleSpotMenuItem } from './handlers';
 import { useState, useEffect } from 'react';
 
 
@@ -11,25 +11,27 @@ import './style/media.css';
 
 
 
-const PageHeader = () => {
+function PageHeader() {
 
     const [isVisible, setIsVisible] = useState(false);
-    let resume = 0, landing = 0, skills = 0,scrollPosition = 0;
+    let resume = {}, landing = {}, skills = {}, scrollPosition = {}, projects = {};
 
     useEffect(() => {
         landing = document.getElementById("landing-container");
         resume = document.getElementById("resume-container");
         skills = document.getElementById("skills-container");
+        projects = document.getElementById("projects-container");
 
     }, []);
-    
-     window.addEventListener("scroll",()=>{
+
+    window.addEventListener("scroll", () => {
         handleSpotMenuItem([
-            {height:resume.offsetTop,navItem:"resume"},
-            {height:skills.offsetTop,navItem:"skills"}
+            { height: resume.offsetTop, navItem: "resume" },
+            { height: skills.offsetTop, navItem: "skills" },
+            { height: projects.offsetTop, navItem: "projects" }
         ]);
 
-     });
+    });
 
 
     useEffect(() => {
@@ -77,7 +79,12 @@ const PageHeader = () => {
                            </span>
                             </a>
                         </li>
-                        <li>
+                        <li
+                            id="navItem-projects"
+                            onClick={(event) => {
+                                handleGoToSection(projects);
+                            }}
+                        >
                             <a>
                                 <FontAwesomeIcon icon={faProjectDiagram} />
                                 <br /><span>

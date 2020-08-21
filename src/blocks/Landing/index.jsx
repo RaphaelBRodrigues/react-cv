@@ -8,7 +8,7 @@ import foto from '../../assets/images/foto.jpeg';
 import './styles.css';
 import './media.css';
 
-const Landing = () => {
+function Landing(){
     return (
         <div id="landing-container">
                <div id="landing-fita">

@@ -13,7 +13,7 @@ import './style/media.css';
 
 
 
-const Skills = () => {
+function Skills(){
     return (
         <div id="skills-container">
             <SectionContainer dark double>
@@ -22,14 +22,14 @@ const Skills = () => {
                 />
                 <div id="skills-block-container">
                     <div>
-                        <ContentBlock icon={faChartLine} title="????-end">
+                        <ContentBlock light icon={faChartLine} title="????-end">
                             <Skill title="PHP" nivel={70} icon={faChartLine} />
                             <Skill title="MySQL" nivel={60} icon={faChartLine} />
                             <Skill title="HTML" nivel={65} icon={faChartLine} />
                             <Skill title="CSS" nivel={62} icon={faChartLine} />
                             <Skill title="Bootstrap" nivel={45} icon={faChartLine} />
                         </ContentBlock>
-                        <ContentBlock icon={faChartLine} title="Javascript">
+                        <ContentBlock light icon={faChartLine} title="Javascript">
                             <Skill title="React" nivel={50} icon={faChartLine} />
                             <Skill title="React Native" nivel={50} icon={faChartLine} />
                             <Skill title="Node.Js" nivel={50} icon={faChartLine} />
@@ -38,7 +38,7 @@ const Skills = () => {
                         </ContentBlock>
                     </div>
                     <div>
-                    <ContentBlock icon={faChartLine}>
+                    <ContentBlock light icon={faChartLine}>
                         <Skill title="Linux" nivel={60} icon={faChartLine} />
                         <Skill title="Git" nivel={55} icon={faChartLine} />
                         <Skill title="Docker" nivel={30} icon={faChartLine} />
