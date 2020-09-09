@@ -163,7 +163,7 @@ grid-area: nome;
 #landing-fita p{
     transition-duration: 2s;
     padding: 0 1em;
-    animation: trocarTexto 3s linear infinite;
+    animation: trocarTexto 5s linear infinite;
     position: relative;
     white-space: nowrap;
 }
@@ -171,13 +171,8 @@ grid-area: nome;
 @keyframes trocarTexto {
     from{
         transform: translate(0,0);
-        color:green;
-    }
-    50%{
-        color:white;
     }
     to{
         transform: translate(100%,0);
-        color:green;
     }
 }

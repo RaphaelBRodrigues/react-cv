@@ -25,7 +25,6 @@ function Graduation() {
                         <div>
                             <a href="https://www.unasp.br/">
                                 <img src={logoUnasp} alt="Logo da UNASP" />
-
                             </a>
                         </div>
                         <div>
@@ -38,9 +37,26 @@ function Graduation() {
                                 </p>
                             </div>
                         </div>
-
                     </div>
-
+                </ContentBlock>
+                <ContentBlock light icon={faGraduationCap}>
+                    <div id="graduation-row">
+                        <div>
+                            <a href="https://www.unasp.br/">
+                                <img src={logoUnasp} alt="Logo da UNASP" />
+                            </a>
+                        </div>
+                        <div>
+                            <h2>Bacharelado em Ciência da Computação</h2>
+                            <h3> <cite> UNASP </cite> <small>2020-2023</small></h3>
+                            <div>
+                                <p>
+                                    Ensino médio integrado ao técnico de informática realizado entre os anos
+                                    de 2017 a 2019,o principal projeto desenvolvido neste período foi o PayPizza.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </ContentBlock>
             </SectionContainer>
         </div>

@@ -27,6 +27,7 @@ function Landing(){
                 <button> <p>Currículo<i><FontAwesomeIcon icon={faScroll} /></i> </p></button>
                 <button><p>Telefone<i><FontAwesomeIcon icon={faPhoneAlt} /> </i> </p></button>
                 <p>{'{ '}Raphael B. Rodrigues {' }'}</p>
+
             </div>
             
         </div>
