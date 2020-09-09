@@ -1,0 +1,12 @@
+#graduation-container div #contentBlock-container fieldset{
+  text-align: left;
+
+}
+
+#graduation-container #graduation-row{
+  display: flex;
+  width: 100%;
+}
+#graduation-container #graduation-row div + div{
+  padding: 1em;
+}

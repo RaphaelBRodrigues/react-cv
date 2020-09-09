@@ -1,0 +1,50 @@
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  #header-container {
+    width: 12vw !important;
+  }
+  #header-container nav ul li span {
+    font-size: 0.5em !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header#header-container > div {
+    display: inherit;
+    height: 6em;
+    align-items: center;
+  }
+
+  #header-container {
+    display: inherit !important;
+    width: 100vw !important;
+    justify-content: center !important;
+    position: absolute !important;
+    flex-flow: 1;
+  }
+
+  header#header-container nav ul li:hover {
+    width: 100%;
+  }
+
+
+
+  #header-container nav ul li span {
+    opacity: 1 !important;
+    padding-top: 0.8em;
+  }
+
+  header#header-container nav
+   {
+     transition: 1s;
+     flex-grow: 1 !important;
+  }
+  .hideMenu{
+    opacity: 0;
+    margin-left:-130% !important;
+
+  }
+  .showMenu{
+    margin-left:-0% !important;
+  }
+}

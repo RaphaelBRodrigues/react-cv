@@ -20,16 +20,24 @@ function ContentBlock({ icon, text, children ,title,light}){
                 light ? "lightContentBlock" :null
             }
             >
-                <legend>
-                    <i>
-                        <FontAwesomeIcon icon={icon} />
-                    </i>
-                </legend>
+                {
+                    icon && <legend>
+                        <i>
+                            <FontAwesomeIcon icon={icon} />
+                        </i>
+                    </legend>
+                }
+
                 <div className="legend2">{title}</div>
 
-                <p>
-                    {text ? text : null}
-                </p>
+                {
+                    text ?
+                        <p>
+                            {text ? text : null}
+                        </p>
+                    :null
+                }
+
                 {children}
 
             </fieldset>

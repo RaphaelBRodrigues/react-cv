@@ -12,7 +12,15 @@ function Landing(){
     return (
         <div id="landing-container">
                <div id="landing-fita">
-               {'<'} DESENVOLVEDOR {'/>'}
+                   <p>
+                       {'<'} DESENVOLVEDOR {'/>'}
+                   </p>
+                   <p>
+                       {'<'} DESENVOLVEDOR {'/>'}
+                   </p>
+                   <p>
+                       {'<'} DESENVOLVEDOR {'/>'}
+                   </p>
             </div>
             <div id="photo-container">
                 <img src={foto} alt="" />

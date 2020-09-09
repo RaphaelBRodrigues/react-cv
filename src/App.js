@@ -4,7 +4,7 @@ import './assets/styles/global.css';
 
 import Footer from './blocks/Footer';
 import PageHeader from './blocks/PageHeader';
-import Content from './blocks/Content';
+import Content from './Content';
 
 
 

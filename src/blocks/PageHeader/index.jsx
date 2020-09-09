@@ -14,21 +14,25 @@ import './style/media.css';
 function PageHeader() {
 
     const [isVisible, setIsVisible] = useState(false);
-    let resume = {}, landing = {}, skills = {}, scrollPosition = {}, projects = {};
+    let resume = {}, landing = {}, skills = {}, scrollPosition = {},career = {},graduation = {}, projects = {};
 
     useEffect(() => {
         landing = document.getElementById("landing-container");
         resume = document.getElementById("resume-container");
         skills = document.getElementById("skills-container");
         projects = document.getElementById("projects-container");
-
+        graduation = document.getElementById("graduation-container");
+        career = document.getElementById("career-container");
+        
     }, []);
 
     window.addEventListener("scroll", () => {
         handleSpotMenuItem([
             { height: resume.offsetTop, navItem: "resume" },
             { height: skills.offsetTop, navItem: "skills" },
-            { height: projects.offsetTop, navItem: "projects" }
+            { height: projects.offsetTop, navItem: "projects" },
+            { height: graduation.offsetTop, navItem: "graduation" },
+            { height: career.offsetTop, navItem: "career" },
         ]);
 
     });
@@ -92,7 +96,12 @@ function PageHeader() {
                             </span>
                             </a>
                         </li>
-                        <li>
+                        <li
+                              id="navItem-graduation"
+                              onClick={(event) => {
+                                  handleGoToSection(graduation);
+                              }}
+                        >
                             <a>
                                 <FontAwesomeIcon icon={faGraduationCap} />
                                 <br /><span>
@@ -100,19 +109,16 @@ function PageHeader() {
                             </span>
                             </a>
                         </li>
-                        <li>
+                        <li
+                          id="navItem-career"
+                          onClick={(event) => {
+                              handleGoToSection(career);
+                          }}
+                        >
                             <a>
                                 <FontAwesomeIcon icon={faBriefcase} />
                                 <br /><span>
                                     Carreira
-                            </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <FontAwesomeIcon icon={faSatellite} />
-                                <br /><span>
-                                    Contatos
                             </span>
                             </a>
                         </li>
@@ -124,6 +130,15 @@ function PageHeader() {
                             </span>
                             </a>
                         </li>
+                        <li>
+                            <a>
+                                <FontAwesomeIcon icon={faSatellite} />
+                                <br /><span>
+                                    Contatos
+                            </span>
+                            </a>
+                        </li>
+                      
 
                     </ul>
 
