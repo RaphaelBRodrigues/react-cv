@@ -33,7 +33,8 @@
     background-color: green;
     border-top-right-radius: 100px;
     border-bottom-right-radius: -50px;
-    
+    box-shadow:0 0 30px green;
+
 }
 
 #skill-container.soon{

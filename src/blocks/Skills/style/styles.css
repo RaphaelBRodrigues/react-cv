@@ -1,6 +1,7 @@
 #skills-block-container{
   justify-content: center;
   width: 100%;
+  margin-top: 2em;
 }
 #skills-block-container div{
   display: flex;

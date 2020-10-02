@@ -5,12 +5,14 @@ import SectionContainer from '../../components/SectionContainer';
 
 import logoUnasp from '../../assets/images/logoUnasp.jpeg';
 
-import { faGraduationCap , faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap , faCheck , faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 
 
 import './style/styles.css';
 import './style/media.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import GradutionBox from "../../components/GraduationBox";
 
 
 
@@ -20,44 +22,27 @@ function Graduation() {
 
             <SectionContainer dark={true}>
                 <SectionTitle title="Formação"/>
-                <ContentBlock light icon={faGraduationCap}>
-                    <div id="graduation-row">
-                        <div>
-                            <a href="https://www.unasp.br/">
-                                <img src={logoUnasp} alt="Logo da UNASP" />
-                            </a>
-                        </div>
-                        <div>
-                            <h2>Ensino Médio Técnico</h2>
-                            <h3> <cite> UNASP </cite> <small>2017-2019</small></h3>
-                            <div>
-                                <p>
-                                    Ensino médio integrado ao técnico de informática realizado entre os anos
-                                    de 2017 a 2019,o principal projeto desenvolvido neste período foi o PayPizza.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </ContentBlock>
-                <ContentBlock light icon={faGraduationCap}>
-                    <div id="graduation-row">
-                        <div>
-                            <a href="https://www.unasp.br/">
-                                <img src={logoUnasp} alt="Logo da UNASP" />
-                            </a>
-                        </div>
-                        <div>
-                            <h2>Bacharelado em Ciência da Computação</h2>
-                            <h3> <cite> UNASP </cite> <small>2020-2023</small></h3>
-                            <div>
-                                <p>
-                                    Ensino médio integrado ao técnico de informática realizado entre os anos
-                                    de 2017 a 2019,o principal projeto desenvolvido neste período foi o PayPizza.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </ContentBlock>
+                <GradutionBox
+                    isFinished
+                    logo={logoUnasp}
+                    site={"https://www.unasp.br/"}
+                    title={"Ensino Médio Técnico"}
+                    place={"UNASP"}
+                    date={"2017-2019"}
+                    description={" Ensino médio integrado ao técnico de informática realizado entre os anos\n" +
+                    "de 2017 a 2019,o principal projeto desenvolvido neste período foi o PayPizza."}
+
+                />
+                <GradutionBox
+                    logo={logoUnasp}
+                    site={"https://www.unasp.br/"}
+                    title={"Bacharelado em Ciência da Computação"}
+                    place={"UNASP"}
+                    date={"2020-2023"}
+                    description={" Ensino médio integrado ao técnico de informática realizado entre os anos\n" +
+                    "de 2017 a 2019,o principal projeto desenvolvido neste período foi o PayPizza."}
+
+                />
             </SectionContainer>
         </div>
     );

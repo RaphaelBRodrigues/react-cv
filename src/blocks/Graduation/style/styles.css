@@ -10,8 +10,40 @@
 #graduation-container #graduation-row{
   display: flex;
   width: 100%;
+  font-size: 1em;
+
+}
+#graduation-container #graduation-row img{
+    height: 100%;
 }
 
+#graduation-container #graduation-row div {
+height: 6em;
+}
 #graduation-container #graduation-row div + div{
   padding: 0 1em;
+  position: relative;
+  top:-0.5em;
+}
+.graduation-status{
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  font-size:1.4em;
+  color:green;
+}
+
+.inProgress svg{
+  animation: rotateSpinner 1.5s linear infinite;
+  color:yellow;
+}
+
+@keyframes rotateSpinner {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }

@@ -21,6 +21,7 @@ function Skills(){
                     title="Skills"
                 />
                 <div id="skills-block-container">
+
                     <div>
                         <ContentBlock light icon={faChartLine} title="????-end">
                             <Skill title="PHP" nivel={70} icon={faChartLine} />
