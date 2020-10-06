@@ -29,12 +29,14 @@ function Skills(){
                             <Skill title="HTML" nivel={65} icon={faChartLine} />
                             <Skill title="CSS" nivel={62} icon={faChartLine} />
                             <Skill title="Bootstrap" nivel={45} icon={faChartLine} />
+                            <Skill soon title="Vue" icon={faChartLine} />
                         </ContentBlock>
                         <ContentBlock light icon={faChartLine} title="Javascript">
                             <Skill title="React" nivel={50} icon={faChartLine} />
                             <Skill title="React Native" nivel={50} icon={faChartLine} />
                             <Skill title="Node.Js" nivel={50} icon={faChartLine} />
                             <Skill title="MongoDB" nivel={50} icon={faChartLine} />
+                            <Skill soon title="Redux" icon={faChartLine} />
                             <Skill soon title="Angular" icon={faChartLine} />
                         </ContentBlock>
                     </div>
@@ -42,6 +44,7 @@ function Skills(){
                     <ContentBlock light icon={faChartLine}>
                         <Skill title="Linux" nivel={60} icon={faChartLine} />
                         <Skill title="Git" nivel={55} icon={faChartLine} />
+                        <Skill title="Java" nivel={25} icon={faChartLine} />
                         <Skill title="Docker" nivel={30} icon={faChartLine} />
                         <Skill textNivel="Avançado" title="Inglês" nivel={75} icon={faChartLine} />
                     </ContentBlock>

@@ -6,7 +6,7 @@
 #skills-block-container div{
   display: flex;
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 #skills-block-container div fieldset{
   width: 75%;
