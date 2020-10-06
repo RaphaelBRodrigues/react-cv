@@ -15,7 +15,7 @@ import ButtonContainer from "../ButtonContainer";
 
 function GradutionBox({logo,site, place,title,date, description,isFinished}) {
     return (
-        <>
+        <div className={"graduation-box"}>
             <ContentBlock light icon={faGraduationCap}>
                 <div id="graduation-row">
                     <div>
@@ -47,9 +47,10 @@ function GradutionBox({logo,site, place,title,date, description,isFinished}) {
                         )
                     }
                 </div>
+                <ButtonContainer info www />
+
             </ContentBlock>
-            <ButtonContainer more />
-        </>
+        </div>
     );
 }
 

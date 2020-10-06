@@ -4,7 +4,7 @@
 }
 
 #graduation-container div #contentBlock-container{
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 #graduation-container #graduation-row{
@@ -15,6 +15,7 @@
 }
 #graduation-container #graduation-row img{
     height: 100%;
+  border-radius: 1em;
 }
 
 #graduation-container #graduation-row div {

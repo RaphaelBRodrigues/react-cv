@@ -1,0 +1,12 @@
+.graduation-box{
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin:0;
+}
+
+
+
+.graduation-box #contentBlock-container{
+    width: 100%;
+}
