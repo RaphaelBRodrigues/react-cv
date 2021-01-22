@@ -1,5 +1,4 @@
 {
-  "extends": "./paths.json",
   "compilerOptions": {
     "moduleResolution": "node",
     "target": "es5",
@@ -22,9 +21,11 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src/**/*.ts"
+    "./src/**/*"
   ],
   "exclude": [
-    "./node_modules/**/*"
-  ]
+    "./node_modules/**/*",
+    "dist"
+  ],
+  "extends": "./paths.json",
 }
