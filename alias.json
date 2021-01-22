@@ -6,7 +6,10 @@
       "@Services": ["src/services"],
       "@Assets": ["src/assets"],
       "@Pages": ["src/pages"],
-      "@Store": ["src/store"]
+      "@Utils": ["src/utils"],
+      "@Store": ["src/store"],
+      "@Hooks": ["src/hooks"],
+      "@Components": ["src/components"]
     }
   }
 }
