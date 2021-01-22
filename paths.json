@@ -1,8 +1,0 @@
-{
-  "baseUrl": ".",
-  "module": "es2015",
-  "moduleResolution": "node",
-  "paths": {
-    "@containers/*": ["./src/containers/*"]
-  }
-}

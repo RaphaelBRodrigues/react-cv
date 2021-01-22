@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '@containers/Header';
+import { Header } from '@Containers';
 import * as S from './styled';
 
 const HomePage = () => {
