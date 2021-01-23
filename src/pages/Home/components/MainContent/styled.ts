@@ -13,3 +13,7 @@ export const MainTitle = styled.h1`
     font-size: 8rem;
   }
 `;
+
+export const MainContentWrapper = styled.section`
+  margin: 6rem 0;
+`;

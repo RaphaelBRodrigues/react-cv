@@ -322,15 +322,15 @@ module.exports = function (webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
-        '@Containers': path.resolve(__dirname, "../src/containers"),
-        '@Services': path.resolve(__dirname, "../src/services"),
-        '@Assets': path.resolve(__dirname, "../src/assets"),
-        '@Pages': path.resolve(__dirname, "../src/pages"),
-        '@Store': path.resolve(__dirname, "../src/store"),
-        '@Utils': path.resolve(__dirname, "../src/utils"), 
-        '@Components': path.resolve(__dirname, "../src/components"),
-        '@Hooks': path.resolve(__dirname, "../src/hooks"),
-        '@Styles': path.resolve(__dirname, "../src/styles"),
+        '@Containers': path.resolve(__dirname, "../src/containers/"),
+        '@Services': path.resolve(__dirname, "../src/services/"),
+        '@Assets': path.resolve(__dirname, "../src/assets/"),
+        '@Pages': path.resolve(__dirname, "../src/pages/"),
+        '@Store': path.resolve(__dirname, "../src/store/"),
+        '@Utils': path.resolve(__dirname, "../src/utils/"), 
+        '@Components': path.resolve(__dirname, "../src/components/"),
+        '@Hooks': path.resolve(__dirname, "../src/hooks/"),
+        '@Styles': path.resolve(__dirname, "../src/styles/"),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
