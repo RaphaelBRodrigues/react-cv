@@ -9,6 +9,7 @@
       "@Utils": ["src/utils"],
       "@Store": ["src/store"],
       "@Hooks": ["src/hooks"],
+      "@Styles": ["src/styles"],
       "@Components": ["src/components"]
     }
   }
