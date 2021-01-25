@@ -5,7 +5,8 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: ${({ theme }) => theme.colors.alpha.oneQuarter.darkBlue};
+  /* background-color: ${({ theme }) =>
+    theme.colors.alpha.oneQuarter.darkBlue}; */
 `;
 
 export const LogoWrapper = styled.div`

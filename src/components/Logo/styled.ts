@@ -4,10 +4,10 @@ export const Icon = styled.i`
   align-items: center;
   height: 100%;
   display: flex;
-  cursor: pointer;
 
   &:hover span,
   &:hover svg {
+    cursor: pointer;
     color: ${({ theme }) => theme.colors.gray};
     fill: ${({ theme }) => theme.colors.gray} !important;
     & path:last-of-type {

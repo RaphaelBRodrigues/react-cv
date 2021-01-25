@@ -1,27 +1,26 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Footer from '@Containers/Footer';
 import Header from '@Containers/Header';
 import Home from '@Pages/Home/components/MainContent';
-import store from './store';
-import { ThemeProvider } from 'styled-components';
-import theme from '@Styles/theme';
 import styles from '@Styles/global.module.css';
 import * as S from './styled';
+import Loading from '@Containers/Loading';
+import { IUiState } from '@Store/ducks/ui/interfaces';
+import { ApplicationStore } from '@Store/interface';
 
 function App() {
+  const { globalLoading } = useSelector<ApplicationStore, IUiState>(
+    (state) => state.ui,
+  );
   return (
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <div className={styles.App}>
-          <Header />
-          <S.ContentWrapper>
-            <Home />
-          </S.ContentWrapper>
-          <Footer />
-        </div>
-      </ThemeProvider>
-    </Provider>
+    <div className={styles.App}>
+      <Header />
+      <S.ContentWrapper>
+        {globalLoading ? <Loading /> : <Home />}
+      </S.ContentWrapper>
+      <Footer />
+    </div>
   );
 }
 

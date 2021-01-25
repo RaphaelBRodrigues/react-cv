@@ -1,11 +1,9 @@
 import reducer from './ducks';
-import { createStore, Store } from 'redux';
-import { ITesteState } from './ducks/teste/interfaces';
+import { createStore, Store, applyMiddleware } from 'redux';
+import logger from './middlewares/logger';
 
-export interface ApplicationStore {
-  teste: ITesteState;
-}
+const middlewares = applyMiddleware(logger);
 
-const store: Store = createStore(reducer);
+const store: Store = createStore(reducer, middlewares);
 
 export default store;
