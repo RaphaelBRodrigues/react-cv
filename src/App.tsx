@@ -17,7 +17,8 @@ function App() {
     <div className={styles.App}>
       <Header />
       <S.ContentWrapper>
-        {globalLoading ? <Loading /> : <Home />}
+        {globalLoading && <Loading />}
+        <Home />
       </S.ContentWrapper>
       <Footer />
     </div>
